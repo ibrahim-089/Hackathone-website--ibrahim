@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header staret */
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav img{
+    width: 15vw;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    gap: 22px;
+    margin-top: 15px;
+}
+
+.menu ul li{
+    font-family:"Inter", sans-serif ;
+  font-size: 8px;
+    list-style: none;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
+    
+}
+
+.button1 button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 9px;
+    font-size:8px ;
+    font-family: "Inter", sans-serif;
+    margin-top: 8px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.377);
+    }
+}
+
+/* header end` */
+
+/* container 1 start` */
+
+.container1{
+    position: relative;
+    display: flex;
+
+
+    
+}
+
+.container1-text{
+position: absolute;
+top: 15vh;
+left: 10vw;
+
+}
+
+.container1-text :nth-child(1){
+   font: 2rem  "Inter", sans-serif;
+   line-height: 2.5rem;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.container1-text :nth-child(2){
+   font: 0.9rem  "Inter", sans-serif;
+   /* line-height: 1rem; */
+   font-weight: 300;
+   margin-bottom: 20px;
+   
+}
+.container1-text :nth-child(3){
+   font: 0.5rem  "Inter", sans-serif;
+   font-weight: 500;
+   background-color: rgba(31, 30, 30, 0.897);
+   padding: 11px 27px;
+   border: none;
+   color: white;
+   border-radius: 9px;
+   cursor: pointer;
+
+   &:hover{
+    background-color: black;
+   }
+
+   
+}
+
+.container1-img{
+    position: absolute;
+    top: 15vh;
+    left: 50vw;
+    
+}
+
+.container1-img img{
+    
+   
+    height: 60vh;
+    width: 50vw;
+    object-fit: contain;
+}
+/* container 1 end` */
+
+/* container 2 start */
+
+.container2-logo{
+    margin-top: 110vh;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.container2-logo img{
+    width: 70px;
+    height: 18px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* container2 end */
+
+
+/* container 3 star */
+.container3{
+    margin-top: 30vh;
+
+    display: flex;
+    gap: 20px;
+    
+}
+
+.container3 :nth-child(1){
+    margin-left: 5rem;
+    font: 22px "Inter", sans-serif;
+    font-weight: 700;
+    background-color: rgba(81, 230, 12, 0.836);
+    margin-bottom: 3rem;
+
+
+}
+
+.container3 :nth-child(2){
+    
+    font: 12px "Inter", sans-serif;
+    font-weight: 400;
+   
+
+}
+
+/* contanier 3 end */
+
+/* container4 start */
+
+.container4{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20vh;
+}
+.box1{
+    
+    background-color:white;
+    position: relative;
+    height: 55vh;
+    width: 45vw;
+    border: 1px solid black;
+    margin-left: 3vw;
+    border-radius: 20px;
+}
+
+.container4-img img{
+    position: absolute;
+    width: 20vw;
+    top: 14vh;
+    left: 20vw;
+    height: auto;
+}
+
+.container4-text{
+    position: absolute;
+    background-color:  rgba(81, 230, 12, 0.836) ;
+    font: 15px "Inter", sans-serif;
+    top: 12vh;
+    left: 3vw;
+}
+
+.container4-button{
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+    
+}
+
+.container4-button button{
+    font: 7px "Inter", sans-serif ;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.507);
+    }
+}
+.box2{
+    
+    background-color: white;
+    position: relative;
+    height: 55vh;
+    width: 45vw;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+/* container4 end */
+
+/* container5 start */
+
+.block{
+    display: flex;
+    gap: 30px;
+    height: 18vh;
+    width: 81vw;
+    background-color:white ;
+    margin-left: 4rem;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.541);
+    }
+}
+
+.block :nth-child(1){
+    font-size: 40px;
+    margin-left: 3rem;
+}
+.block :nth-child(2){
+    font-size: 20px;
+    font-family: "Inter", sans-serif ;
+}
+/* container5 end */
+
+
+
+
+@media (max-width:425px) {
+    .nav{
+        display: hidden;
+    }
+
+    .container1{
+        flex-direction: column;
+    }
+
+    .menu ul{
+        display: hidden;
+    }
+}
+
+
+    
